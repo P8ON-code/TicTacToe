@@ -17,8 +17,6 @@ namespace TicTacToe
 {
     public partial class MainWindow : Window
     {
-        
-
         public bool IsPlayer1Turn { get; set; } = true;
 
         public int Counter { get; set; } = 0;
@@ -119,7 +117,7 @@ namespace TicTacToe
                 return true;
 
             }
-            if (Button_1_0.Content == Button_1_1.Content && Button_1_1.Content == Button_2_1.Content && Button_1_0.Content != null)
+            if (Button_0_1.Content == Button_1_1.Content && Button_1_1.Content == Button_2_1.Content && Button_0_1.Content != null)
             {
                 Button_0_1.Background = Brushes.Green;
                 Button_1_1.Background = Brushes.Green;
